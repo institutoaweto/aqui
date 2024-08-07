@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/productdesk.css">
 
     <link rel="stylesheet" media="screen and (max-width:700px)" href="mob/mobheader.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="mob/mobmain.css">
 
     <title>Pagina Inicial - Loja Aweto</title>
 </head>
@@ -22,6 +23,18 @@
             padding: 0px;
             margin: 0px;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .ativar{
+            display: flex;
+            overflow-y: scroll;
+        }
+        @media (max-width:700px){
+            body,html{
+            padding: 0px;
+            margin:0px; 
+            width:100%;
+           overflow-x: hidden;
+        }
         }
     </style>
 
@@ -40,26 +53,20 @@
             <i class="fa-solid fa-magnifying-glass" id="icone-pesquisamob"></i>
         </article>
 
-
-
-
-
-
         <article class="desk-pesquisa">
             <div class="pesquisa-desk">
-                <input type="search" id="deskinput-pesquisa" placeholder="Pesquise o seu E-book">
+                <input type="text" id="deskinput-pesquisa" placeholder="Pesquise o seu E-book">
                 <i class="fa-solid fa-magnifying-glass" id="icone-pesquisadesk"></i>
+                <i class="fa-solid fa-xmark" id="icone-fecharpesquisadesk"></i>
             </div>
         </article>
 
-        
         <!--Globo Web-->
         <article class="desk-icones">
             <i class="fa-solid fa-globe" id="desk-icons"></i>
             <i class="fa-solid fa-book-bookmark" id="desk-icons"></i>
             <i class="fa-solid fa-user" id="desk-icons"></i>
         </article>
-
 
         <article class="desk-nav">
             <nav>
@@ -75,6 +82,7 @@
                 <input type="text" id="mobinput-pesquisa" placeholder="Pesquise o seu E-book">
                 <i class="fa-regular fa-circle-xmark" id="icone-fecharpesquisaamob"></i>
             </div>
+
         </div>
 
         <div class="config-menumob">
@@ -124,9 +132,980 @@
                 </a>
             
             </article>
+        </div>     
+
 
     </header>
 
+    <ul class="config-blocopesquisadesk" id="listaseçao">
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/mkrgbvqC/saudecondicionamentofisicoepalavras.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/prhxWfzT/mareting-hipn-tico.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Técnicas de Marketing Hipnótico</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/wBvzRXFY/capacita-ofinanceira.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Capacitação Financeira</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/R0VSQ5S8/aimperfei-odaalegria.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">A Imperfeição Da Alegria</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Desenvolva O Seu QI Financeiro</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Guia Do Trabalho A Partir De Casa</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/rF0qQNLV/8dicasparaviver.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">8 Dicas Para Viver Uma Vida Com Propósito</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/FKfbKqtt/parasetornarumvencedor.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">19 Regras Para Se Tornar Um Vencedor</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/BbLHS7XY/comosetornarlideremmarketing.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">19 Regras Para Se Tornar Um Vencedor</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/vB0GSPBB/turbinandosuamemoria.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">5 Técnicas Para Turbinar A Sua Memória</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/Y04BDMZn/afelicidadecome-acomvoceum.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">A Felicidade Começa Com Você Livro 1</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/T2m6bYj1/afelicidadecome-acomvocedois.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">A Felicidade Começa Com Você Livro 2</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/3wHry4VK/5-passos.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">5 Passos Para Ter Êxito Livro 1</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/G2KpnLMb/superaraansiedade.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Superar a Ansiedade</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/26kzGpCM/7passos.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">7 Passos Para O Sucesso Pleno</p>
+                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/52QjQMtm/receitas1.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 1</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 19,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/tCMYgg9T/receitas2.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 2</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 19,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/pd894tbd/receitas3.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 3</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 19,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/VkJ09CKn/receitas4.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 4</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 19,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/VkJ09CKn/receitas4.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Alcançando suas Metas de Perda de Peso</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+        
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/RZG90s7T/alcan-andosuametas.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Alcançando suas Metas de Perda de Peso</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+               
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/mkrgbvqC/saudecondicionamentofisicoepalavras.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Saúde Condicionamento Físico e Palavras</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+               
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/YShcCpqp/educa-aoecondicionamento.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Comida e Saúde</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/YShcCpqp/educa-aoecondicionamento.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">5 dicas para fazer em menos tempo Livro 1</p>
+                <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                <p id="preco-inputdesk">R$ 09,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+
+
+
+
+
+
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/rwyX71BR/candombl-emsuaess-ncia.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Candomblé Em Sua Essência</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Kizomba Miolo</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 29,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Kizomba Miolo</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 29,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/V66x5zff/astresmarias.jpg" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">As Três Marias</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 39,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Salve Jorge</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Sara Khai - A Santa Dos Ciganos</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Sara Khai - A Santa Dos Ciganos</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 14,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 1</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/GtRSGrrT/maravilhas2.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 2</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/MKWFGWdh/maravilhas3.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 3</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/2jdtmqFQ/maravilhas4.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 4</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/k5kQRc92/maravilhas5.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 5</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+        <li class="li-pesquisadesk"><a href="">
+            <div class="fundo-imgpesquisadesk"> 
+                <img src="https://i.postimg.cc/zvNT0Gy5/maravilhas6.png" alt="" id="img-inputdesk">
+            </div>
+            <div class="fundo-textopesquisadesk">
+                <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 6</p>
+                <p id="autor-inputdesk">Religião</p>
+                <p id="preco-inputdesk">R$ 24,90</p>
+                <p id="btn-pesquisacomprardesk">Comprar</p>
+            </div>
+        </a></li>
+
+    </ul>
+
+    <ul class="config-blocopesquisamob" id="listaseçaomob">
+
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/mkrgbvqC/saudecondicionamentofisicoepalavras.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Saúde , Condicionamento Físico e Palavras</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/prhxWfzT/mareting-hipn-tico.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Técnicas de Marketing Hipnótico</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/wBvzRXFY/capacita-ofinanceira.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Capacitação Financeira</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/R0VSQ5S8/aimperfei-odaalegria.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">A Imperfeição Da Alegria</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Desenvolva O Seu QI Financeiro</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Guia Do Trabalho A Partir De Casa</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/rF0qQNLV/8dicasparaviver.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">8 Dicas Para Viver Uma Vida Com Propósito</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/FKfbKqtt/parasetornarumvencedor.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">19 Regras Para Se Tornar Um Vencedor</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/BbLHS7XY/comosetornarlideremmarketing.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">19 Regras Para Se Tornar Um Vencedor</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/vB0GSPBB/turbinandosuamemoria.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">5 Técnicas Para Turbinar A Sua Memória</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/Y04BDMZn/afelicidadecome-acomvoceum.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">A Felicidade Começa Com Você Livro 1</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/T2m6bYj1/afelicidadecome-acomvocedois.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">A Felicidade Começa Com Você Livro 2</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/3wHry4VK/5-passos.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">5 Passos Para Ter Êxito Livro 1</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/G2KpnLMb/superaraansiedade.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Superar a Ansiedade</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/26kzGpCM/7passos.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">7 Passos Para O Sucesso Pleno</p>
+                    <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/52QjQMtm/receitas1.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 1</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 19,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/tCMYgg9T/receitas2.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 2</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 19,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/pd894tbd/receitas3.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 3</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 19,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/VkJ09CKn/receitas4.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Receitas Saudáveis e Cheias de Vida Livro 4</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 19,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/VkJ09CKn/receitas4.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Alcançando suas Metas de Perda de Peso</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+            
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/RZG90s7T/alcan-andosuametas.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Alcançando suas Metas de Perda de Peso</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+                   
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/mkrgbvqC/saudecondicionamentofisicoepalavras.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Saúde Condicionamento Físico e Palavras</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+                   
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/YShcCpqp/educa-aoecondicionamento.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">AComida e Saúde</p>
+                    <p id="autor-inputdesk">Saúde e Dietas Saudaveis</p>
+                    <p id="preco-inputdesk">R$ 09,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Boa Noite Para Quem É De Boa Noite</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/rwyX71BR/candombl-emsuaess-ncia.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Candomblé Em Sua Essência</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Kizomba Miolo</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 29,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Kizomba Miolo</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 29,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/V66x5zff/astresmarias.jpg" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">As Três Marias</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 39,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/kXBgLdWd/z-pilantra.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Salve Jorge</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Sara Khai - A Santa Dos Ciganos</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Sara Khai - A Santa Dos Ciganos</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 14,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/cJqCQ5gG/sarakiah.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 1</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/GtRSGrrT/maravilhas2.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 2</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/MKWFGWdh/maravilhas3.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 3</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/2jdtmqFQ/maravilhas4.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 4</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/k5kQRc92/maravilhas5.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 5</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+    
+            <li class="li-pesquisadesk"><a href="">
+                <div class="fundo-imgpesquisadesk"> 
+                    <img src="https://i.postimg.cc/zvNT0Gy5/maravilhas6.png" alt="" id="img-inputdesk">
+                </div>
+                <div class="fundo-textopesquisadesk">
+                    <p id="titulo-inputdesk">Maravilha Da Magia Cigana Livro 6</p>
+                    <p id="autor-inputdesk">Religião</p>
+                    <p id="preco-inputdesk">R$ 24,90</p>
+                    <p id="btn-pesquisacomprardesk">Comprar</p>
+                </div>
+            </a></li>
+
+
+          
+    
+    </ul>
+
+    <script>
+
+    </script>
 
 
     <main>
@@ -337,14 +1316,14 @@
 
         </article>
 
-        <article class="fundo-relogio">
+        <article class="fundo-relogio" id="fundo-relogiomob">
 
-            <div class="texto-relogio">
+            <div class="texto-relogio" >
                 Ofertas por tempo ilimitado!
             </div>
 
          
-            <ul id="fundo-contagem">
+            <ul id="fundo-contagem" class="fundo-contagemmob">
                     <li id="lista-contagem"><span id="days"></span>Dia</li>
                    
                     <li id="lista-contagem"><span id="hours"></span>Horas</li>
@@ -359,9 +1338,9 @@
          
         </article>
 
-        <article class="fundo-campanha">
+        <article class="fundo-campanha" id="fundo-campanhamob">
 
-        <div class="bloco-campanha">
+        <div class="bloco-campanha" id="bloco-campanhamob">
             <div class="fundo-imagembook">
                 <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="ebookcampanhaladum">
                 <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="ebookcampanha">
@@ -377,7 +1356,7 @@
             </div>
         </div>
 
-        <div class="bloco-campanha">
+        <div class="bloco-campanha" id="bloco-campanhamob">
             <div class="fundo-imagembook">
                 <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="ebookcampanhaladum">
                 <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="ebookcampanha">
@@ -392,7 +1371,22 @@
             </div>
         </div>
 
-        <div class="bloco-campanha">
+        <div class="bloco-campanha" id="bloco-campanhamob">
+            <div class="fundo-imagembook">
+                <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="ebookcampanhaladum">
+                <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="ebookcampanha">
+                <img src="https://i.postimg.cc/prhxWfzT/mareting-hipn-tico.png" alt="" id="ebookcampanhaladdois">
+            </div>
+
+            <div class="texto-campanhabook">
+                <p id="titulo-campanha">Alcance o Corpo Perfeito com essas 3 Edições </p>
+                <p id="autor-campanha">Saúde e Dietas Saudaveis</p>
+                <p id="preco-campanha">R$ 49,90</p>
+                <p id="btn-comprarcampanha">Adquirir</p>                
+            </div>
+        </div>
+
+        <div class="bloco-campanha" id="bloco-campanhamob">
             <div class="fundo-imagembook">
                 <img src="https://i.postimg.cc/zDTsB25R/guiadotrabalhoapartirdecasa.png" alt="" id="ebookcampanhaladum">
                 <img src="https://i.postimg.cc/vHMp67H2/desenvolvaoseuqifinanceira.png" alt="" id="ebookcampanha">
@@ -409,7 +1403,7 @@
 
         </article>
 
-        <section class="fundo-categoriabolha">
+        <section class="fundo-categoriabolha" id="fundo-categoriabolhamob">
 
             <article id="bloco-bolha">
                 <a href="" id="link-page">
@@ -444,6 +1438,7 @@
             </article>      
     
         </section>
+
     </main>
 
     <section class="section-primeiro">
@@ -622,10 +1617,12 @@
 
     </section>
 
-    
 
 
-<script src="JS/campanha.js"></script>
+
 <script src="JS/mobile.js"></script>
+<script src="JS/script.js"></script>
+<script src="JS/campanha.js"></script>
+
 </body>
 </html>

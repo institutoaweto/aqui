@@ -263,6 +263,7 @@ li span {
 /*////////////// CAMPANHA ///////*/
 .fundo-campanha{
     display: flex;
+
     justify-content: space-evenly;
     transform: translateY(-200px);
     background-color: #0C212D;
@@ -274,19 +275,23 @@ li span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-     width: 350px;
-     height: 350px;
+     width: 250px;
+     height: 400px;
      padding: 10px;
      border-radius: 40px;
-     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(250, 246, 246, 0.08) 0px 1px 0px inset;
+     border-bottom: 2px solid white;
+     border-top: 2px solid white;
+     padding: 20px;
+     transform: scale(0.9);
 }
 .fundo-imagembook{
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 350px;
+    width: 50px;
     height: 210px;
     margin-top: -0px;
+    padding: 10px;
 }
 #ebookcampanhaladum,#ebookcampanha,#ebookcampanhaladdois{
     width:250px;
@@ -296,10 +301,10 @@ li span {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(250, 246, 246, 0.08) 0px 1px 0px inset;
 }
 #ebookcampanhaladum{
-    transform: rotate(-30deg) translateX(40px) translateY(40px);
+    transform: rotate(-30deg) scale(1.0) translateX(40px) translateY(40px);
 }
 #ebookcampanhaladdois{
-    transform: rotate(30deg) translateX(-40px) translateY(40px);
+    transform: rotate(30deg) scale(1.0) translateX(-40px) translateY(40px);
 }
 #ebookcampanha{
     z-index: 2;
@@ -338,15 +343,14 @@ li span {
     flex-wrap:wrap ;
     width: 100%;
     margin: 0;
-    padding: 0;
-    height: 100px;
+    height: 150px;
     overflow: hidden;
     padding: 10px;
 }
 #titulo-campanha{
     font-size: 20px;
     color: white;
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 #autor-campanha{
@@ -361,6 +365,7 @@ li span {
     color: #FBB03B;
     font-weight: bold;
     margin-top:-10px;
+    width: 100%;
 
 }
 
@@ -370,7 +375,11 @@ li span {
     padding: 10px;
     font-weight: bold;
     color: #0C212D;
-    transform: translateY(-35px) translateX(125px);
+    width:80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: translateY(-35px);
 }
 #btn-comprarcampanha:hover{
     background-color: #0C212D;
@@ -389,13 +398,18 @@ li span {
 .fundo-categoriabolha{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #031620;
     padding-top: 40px;
     transform: translateY(-250px);
 }
-
+#bloco-bolha{
+    display: flex;
+    flex-wrap: wrap;
+    width:150px;
+}
 #img-bolha{
     width: 300px;
     height: 300px;
@@ -417,18 +431,22 @@ li span {
 
 #texto-bolinha{
     margin-top: -20px;
-    font-size: 23px;
+    font-size: 20px;
     color: white;
     text-align: center;
+    width: 100%;
+    padding: 10px;
 }
 
 #texto-bolinha-religião{
-    margin-top: -20px;
+    margin-top: -0px;
     font-size: 23px;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 .religiao-img{
-    margin-top: -0px;
+    margin-top: -80px;
+    padding: 10px;
 }

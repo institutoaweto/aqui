@@ -1,9 +1,4 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+
 .desk-pesquisa,.desk-nav,#img-logotipodesk,.desk-icones{
     display: none;
 }
@@ -16,14 +11,62 @@ header{
     align-items: center;
     width: 100%;
 }
-.mob-pesquisa, .mob-menu{
-    font-size: 30px;
+
+.config-menumob{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    background-color:white;
+    transform: translateY(550px);
+    margin: 0;
+    overflow-y: auto;
+}
+.ativarconfig-menumob{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    background-color:white;
+    transform: translateY(550px);
+    margin: 0;
+    overflow-y: auto;
+}
+.sectionmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #0c212d;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-bottom: 2px solid #0c212d;
+
+}
+#texto-sectionmenu{
+    font-size: 25px;
+    font-weight: bold;
+}
+#closemenu{
+    font-size: 40px;
+    color: white;
 }
 
 
+/*
+// LUPA GERAL
+*/
+
+.mob-pesquisa, .mob-menu{
+    font-size: 30px;
+}
 .config-pesquisamob{
     display:none;
-
 }
 .ativar-pesquisamob{
     display: flex;
@@ -62,43 +105,109 @@ header{
 
 
 
+/*
+// LUPA CONFIGURAÇÃO
+*/
 
-.config-menumob{
-    display: none;
-}
-.ativarconfig-menumob{
+.ativarbloco{
     display: flex;
-    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 1200px;
-    position: absolute;
     background-color:white;
-    transform: translateY(550px);
-    margin: 0;
-    overflow-y: auto;
-}
-.sectionmenu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: #0c212d;
+    border: 5px solid #FBB03B;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 40px;
-    border-bottom: 2px solid #0c212d;
+    z-index: 2;
+    position: fixed;
+    overflow-y: scroll;
+    overflow: scroll;
+    transform: translateX(-30px);
+}
 
+.config-blocopesquisamob{
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:white;
+    border: 5px solid #FBB03B;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    overflow: scroll;
+    transform: translateX(-30px) translateY(170px);
 }
-#texto-sectionmenu{
-    font-size: 25px;
+
+
+/*
+// LUPA lISTA
+*/
+
+.li-pesquisadesk{
+    display: flex;
+    width: 100%;
+    height:210px;
+    border-bottom:3px solid black;
+    margin: 0;
+    transform: translateX(-20px);
+    padding: 10px;
+}
+.fundo-imgpesquisadesk{
+    padding: 10px;
+    width: 80%;
+}
+#img-inputdesk{
+    width: 100%;
+    height: 190px;
+}
+.fundo-textopesquisadesk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0px;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #031620;
     font-weight: bold;
+    margin: 0;
 }
-#closemenu{
-    font-size: 40px;
-    color: white;
+#titulo-inputdesk{
+    width: 100%;
+    font-size: 18px;
 }
+#autor-inputdesk{
+    display: none;
+    width: 100%;
+    font-size: 14px;
+    margin-top: -20px;
+}
+#preco-inputdesk{
+    width: 70%;
+    font-size: 28px;
+    transform: translateY(-25px) translateX(-10px); 
+}
+#btn-pesquisacomprardesk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBB03B;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 10%;
+    color: #031620;
+    font-size: 20px;
+    transform: translateY(-60px);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

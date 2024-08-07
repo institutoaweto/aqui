@@ -1,4 +1,5 @@
-.config-pesquisamob,.mob-menu,.mob-pesquisa,#img-logotipomob,.config-menumob{
+.config-pesquisamob,.mob-menu,.mob-pesquisa,#img-logotipomob,
+.config-menumob,.config-blocopesquisamob{
     display: none;
 }
 body{
@@ -125,10 +126,97 @@ nav{
     border: 0px;
     outline: none;
 }
-#icone-pesquisadesk{
+#icone-pesquisadesk,#icone-fecharpesquisadesk{
     color: #031620;
 
+}
+#icone-fecharpesquisadesk{
+    display: none;
 }
 #deskinput-pesquisa::placeholder{
     color: #031620;
 }
+
+
+
+
+.config-blocopesquisadesk{
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:white;
+    border: 5px solid #FBB03B;
+    width: 39.2%;
+    z-index: 2;
+    position: fixed;
+}
+.ativarconfig-blocopesquisadesk{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:white;
+    border: 5px solid #FBB03B;
+    width: 36.1%;
+    height: 400px;
+    z-index: 2;
+    position: fixed;
+    transform: translateX(303px) translateY(55px);
+    overflow-y: scroll;
+}
+li{
+    list-style: none;
+}
+
+a{
+    display: flex;
+}
+
+.li-pesquisadesk{
+    display: flex;
+    width: 100%;
+    height:140px;
+    border-bottom:3px solid black;
+    margin: 0;
+    transform: translateX(-20px);
+}
+.fundo-imgpesquisadesk{
+    padding: 10px;
+    width: 40%;
+}
+#img-inputdesk{
+    width: 100%;
+    height: 120px;
+}
+.fundo-textopesquisadesk{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -0px;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #031620;
+    font-weight: bold;
+}
+#titulo-inputdesk{
+    width: 100%;
+    font-size: 16px;
+}
+#autor-inputdesk{
+    width: 100%;
+    font-size: 14px;
+    transform: translateY(-10px);
+}
+#preco-inputdesk{
+    width: 70%;
+    font-size: 25px;
+    transform: translateY(-25px) translateX(-10px); 
+}
+#btn-pesquisacomprardesk{
+    background-color: #FBB03B;
+    padding: 9px;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 10%;
+    color: #031620;
+    transform: translateY(-20px);
+}
+
