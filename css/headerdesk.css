@@ -160,7 +160,7 @@ nav{
     height: 400px;
     z-index: 2;
     position: fixed;
-    transform: translateX(303px) translateY(55px);
+    transform: translateX(299px) translateY(55px);
     overflow-y: scroll;
 }
 li{
