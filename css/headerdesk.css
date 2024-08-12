@@ -54,6 +54,7 @@ a{
 #desk-icons{
     font-size:28px;
     cursor: pointer;
+    color: white;
 }
 #desk-icons:hover{
     color: #FBB03B;

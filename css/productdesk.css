@@ -6,6 +6,15 @@
     width: 100%;   
     margin-top: 0px;
 }
+a{
+    color: black;
+}
+#icone-semelhante{
+    display: flex;
+    align-items: center;
+    color: #0c212d;
+    font-size: 25px;
+}
 .fundo-categoria{
     display: flex;
     width: 80%;

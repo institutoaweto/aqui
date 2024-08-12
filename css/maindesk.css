@@ -2,8 +2,9 @@ main{
 display: flex;
 flex-wrap: wrap;
 width: 100%;
-transform: translateY(135px);
+transform: translateY(100px);
 }
+     
 
 
 /*//////// CARROSSEL DE BANNERS //////// */

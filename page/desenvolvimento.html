@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="../css/headerdesk.css">
     <link rel="stylesheet" href="../css/maindesk.css">
     <link rel="stylesheet" href="../css/productdesk.css">
+    <link rel="stylesheet" href="../css/footerdesk.css">
     <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/mobheader.css">
     <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/mobmain.css">
     <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/mobproduto.css">
-
     <title>Desenvolvimento Social e Profissional - Loja Aweto</title>
 </head>
+
 <body>
+    
     <style>
         body{
             width: 100%;
@@ -31,9 +33,7 @@
             display: flex;
             overflow-y: scroll;
         }
-        a{
-            color: black;
-        }
+
         @media (max-width:700px){
             body,html{
             padding: 0px;
@@ -46,100 +46,107 @@
 
     <header>
 
-        <article class="mob-menu">
-            <i class="fa-solid fa-bars" id="icone-menu"></i>
-        </article>
+    <article class="mob-menu">
+        <i class="fa-solid fa-bars" id="icone-menu"></i>
+    </article>
 
-        <a href="index.html" class="desk-logotipo">
-            <img src="https://i.postimg.cc/8s8LnN55/aweto.png" alt="" id="img-logotipodesk">
-            <img src="https://i.postimg.cc/qvGzZXpy/logoaweto.png" alt="" id="img-logotipomob">
-        </a>
+    <a href="../index.html" class="desk-logotipo">
+        <img src="https://i.postimg.cc/8s8LnN55/aweto.png" alt="" id="img-logotipodesk">
+        <img src="https://i.postimg.cc/qvGzZXpy/logoaweto.png" alt="" id="img-logotipomob">
+    </a>
 
-        <article class="mob-pesquisa">
-            <i class="fa-solid fa-magnifying-glass" id="icone-pesquisamob"></i>
-        </article>
+    <article class="mob-pesquisa">
+        <i class="fa-solid fa-magnifying-glass" id="icone-pesquisamob"></i>
+    </article>
 
-        <article class="desk-pesquisa">
-            <div class="pesquisa-desk">
-                <input type="text" id="deskinput-pesquisa" placeholder="Pesquise o seu E-book">
-                <i class="fa-solid fa-magnifying-glass" id="icone-pesquisadesk"></i>
-                <i class="fa-solid fa-xmark" id="icone-fecharpesquisadesk"></i>
-            </div>
-        </article>
+    <article class="desk-pesquisa">
+        <div class="pesquisa-desk">
+            <input type="text" id="deskinput-pesquisa" placeholder="Pesquise o seu E-book">
+            <i class="fa-solid fa-magnifying-glass" id="icone-pesquisadesk"></i>
+            <i class="fa-solid fa-xmark" id="icone-fecharpesquisadesk"></i>
+        </div>
+    </article>
 
-        <!--Globo Web-->
-        <article class="desk-icones">
-           <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Finstitutoaweto&e=AT336QWXqEDryfHc4K9zPWNceE-fqdcOtIOs8JxMmnTfn6y0detQNRQPBFdI_Gm1GXsW1ACyn5KnR1y6fPrdg_0t0GhzsCYLBI5PE1w2F0yrODFLZKYyc-8"><i class="fa-solid fa-globe" id="desk-icons"></i></a> 
-            <i class="fa-solid fa-book-bookmark" id="desk-icons"></i>
-            <i class="fa-solid fa-user" id="desk-icons"></i>
-        </article>
+    <!--Globo Web-->
+    <article class="desk-icones">
+       <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Finstitutoaweto&e=AT336QWXqEDryfHc4K9zPWNceE-fqdcOtIOs8JxMmnTfn6y0detQNRQPBFdI_Gm1GXsW1ACyn5KnR1y6fPrdg_0t0GhzsCYLBI5PE1w2F0yrODFLZKYyc-8"><i class="fa-solid fa-globe" id="desk-icons"></i></a> 
+        <i class="fa-solid fa-book-bookmark" id="desk-icons"></i>
+        <i class="fa-solid fa-user" id="desk-icons"></i>
+    </article>
 
-        <article class="desk-nav">
-            <nav>
-                <a href="" id="menu-nav">Religião</a>
-                <a href="" id="menu-nav">Desenvolvimento Social e Profissional</a>
-                <a href="" id="menu-nav">Promoção e Ofertas</a>
-                <a href="" id="menu-nav"> Todos</a>
-            </nav>
-        </article>
+    <article class="desk-nav">
+        <nav>
+            <a href="religião.html" id="menu-nav">Religião</a>
+            <a href="desenvolvimento.html" id="menu-nav">Desenvolvimento Social e Profissional</a>
+            <a href="promoção_page.html" id="menu-nav">Promoção e Ofertas</a>
+            <a href="todos.html" id="menu-nav"> Todos</a>
+        </nav>
+    </article>
 
-        <div class="config-pesquisamob">
+    <div class="config-pesquisamob">
 
-            <div class="pesquisa-mob">
-                <input type="text" id="mobinput-pesquisa" placeholder="Pesquise o seu E-book">
-                <i class="fa-regular fa-circle-xmark" id="icone-fecharpesquisaamob"></i>
-            </div>
-
+        <div class="pesquisa-mob">
+            <input type="text" id="mobinput-pesquisa" placeholder="Pesquise o seu E-book">
+            <i class="fa-regular fa-circle-xmark" id="icone-fecharpesquisaamob"></i>
         </div>
 
-        <div class="config-menumob">
-            <article class="sectionmenu">
-                <p id="texto-sectionmenu">Bem Vindo(a)!</p>
-                <i class="fa-solid fa-xmark" id="closemenu"></i>
-            </article>
+    </div>
 
-            <article class="sectionmenunav">
-                <p id="titulo-menuredes">Categorias:</p> 
-                <a href="index.html" id="dados-sectionmenunav">Início 
-                    <i class="fa-solid fa-house" id="menuicone-menu"></i>
-                </a>
-                <a href="" id="dados-sectionmenunav">Promoção e Ofertas
-                    <i class="fa-solid fa-percent" id="menuicone-menu"></i>
-                </a>
-                <a href="" id="dados-sectionmenunav">Desenvolvimento Social e Profissional
-                    <i class="fa-solid fa-user-tie" id="menuicone-menu"></i>
-                </a>
-                <a href="" id="dados-sectionmenunav">Saúde e Dietas Saudaveis
-                    <i class="fa-solid fa-heart-pulse" id="menuicone-menu"></i>
-                </a>
-                <a href="" id="dados-sectionmenunav">Religião
-                    <i class="fa-solid fa-star-and-crescent" id="menuicone-menu"></i>
-                </a>
-                <a href="" id="dados-sectionmenunav">Todos
-                    <i class="fa-solid fa-book" id="menuicone-menu"></i>
-                </a>
-            </article>
+    <div class="config-menumob">
 
-            <article class="sectionmenuredes">
-                <p id="titulo-menuredes">Redes Sociais:</p>
-                <a href="https://api.whatsapp.com/send?phone=+5511%20934983223&text=Ol%C3%A1%2C+instituto+aweto" id="dados-sectionmenunav"> Whatssap
-                    <i class="fa-brands fa-whatsapp" id="menuicone-menu"></i>
-                </a>
-                <a href="https://www.instagram.com/awetoinstituto" id="dados-sectionmenunav"> Instagram
-                    <i class="fa-brands fa-instagram" id="menuicone-menu"></i>
-                </a>
-                <a href="https://www.tiktok.com/@institutoaweto?ug_source=op.auth&ug_term=Linktr.ee&utm_source=awyc6vc625ejxp86&utm_campaign=tt4d_profile_link&_r=1" id="dados-sectionmenunav"> Tik Tok
-                    <i class="fa-brands fa-tiktok" id="menuicone-menu"></i>
-                </a>
-                <a href="https://www.institutoaweto.com.br/" id="dados-sectionmenunav"> Nosso Site
-                    <i class="fa-solid fa-globe" id="menuicone-menu"></i>
-                </a>
-                <a href="https://www.institutoaweto.com.br/doa%C3%A7%C3%B5es-e-contato" id="dados-sectionmenunav">Doar 
-                    <i class="fa-solid fa-heart" id="menuicone-menu"></i>
-                </a>
-            
-            </article>
-        </div>     
+        <article class="sectionmenu">
+            <p id="texto-sectionmenu">Bem Vindo(a)!</p>
+            <i class="fa-solid fa-xmark" id="closemenu"></i>
+        </article>
+
+        <article class="sectionmenunav">
+
+            <p id="titulo-menuredes">Categorias:</p> 
+
+            <a href="../index.html" id="dados-sectionmenunav">Início 
+                <i class="fa-solid fa-house" id="menuicone-menu"></i>
+            </a>
+            <a href="ppromoção_page.html" id="dados-sectionmenunav">Promoção e Ofertas
+                <i class="fa-solid fa-percent" id="menuicone-menu"></i>
+            </a>
+            <a href="desenvolvimento.html" id="dados-sectionmenunav">Desenvolvimento Social e Profissional
+                <i class="fa-solid fa-user-tie" id="menuicone-menu"></i>
+            </a>
+            <a href="saude.html" id="dados-sectionmenunav">Saúde e Dietas Saudaveis
+                <i class="fa-solid fa-heart-pulse" id="menuicone-menu"></i>
+            </a>
+            <a href="religião.html" id="dados-sectionmenunav">Religião
+                <i class="fa-solid fa-star-and-crescent" id="menuicone-menu"></i>
+            </a>
+            <a href="todos.html" id="dados-sectionmenunav">Todos
+                <i class="fa-solid fa-book" id="menuicone-menu"></i>
+            </a>
+
+        </article>
+
+        <article class="sectionmenuredes">
+
+            <p id="titulo-menuredes">Redes Sociais:</p>
+
+            <a href="https://api.whatsapp.com/send?phone=+5511%20934983223&text=Ol%C3%A1%2C+instituto+aweto" id="dados-sectionmenunav"> Whatssap
+                <i class="fa-brands fa-whatsapp" id="menuicone-menu"></i>
+            </a>
+            <a href="https://www.instagram.com/awetoinstituto" id="dados-sectionmenunav"> Instagram
+                <i class="fa-brands fa-instagram" id="menuicone-menu"></i>
+            </a>
+            <a href="https://www.tiktok.com/@institutoaweto?ug_source=op.auth&ug_term=Linktr.ee&utm_source=awyc6vc625ejxp86&utm_campaign=tt4d_profile_link&_r=1" id="dados-sectionmenunav"> Tik Tok
+                <i class="fa-brands fa-tiktok" id="menuicone-menu"></i>
+            </a>
+            <a href="https://www.institutoaweto.com.br/" id="dados-sectionmenunav"> Nosso Site
+                <i class="fa-solid fa-globe" id="menuicone-menu"></i>
+            </a>
+            <a href="https://www.institutoaweto.com.br/doa%C3%A7%C3%B5es-e-contato" id="dados-sectionmenunav">Doar 
+                <i class="fa-solid fa-heart" id="menuicone-menu"></i>
+            </a>
+        
+        </article>
+
+    </div>     
 
 
     </header>
@@ -403,7 +410,7 @@
             </div>
             <div class="fundo-textopesquisadesk">
                 <p id="titulo-inputdesk">Lições Aceleradas de Saúde</p>
-                <p id="autor-inputdesk">Desenvolvimento Social e Profissional</p>
+                <p id="autor-inputdesk">Comida e Saúde</p>
                 <p id="preco-inputdesk">R$ 04,90</p>
                 <p id="btn-pesquisacomprardesk">Comprar</p>
             </div>
@@ -1227,16 +1234,44 @@
 
         </article>
 
-        <article class="fim-categoria">   
-            <a href="desenvolvimento.html" id="fim-categoria">Ver Mais</a>
-        </article>
+
 
     </section>
 
 
+    <footer>
 
+        <ul class="blocfooter"> Redes Sociais:
+            <li id="dados-footer">Nosso <a href="https://www.instagram.com/awetoinstituto" id="footer-redes">Instagram</a></li>
+            <li id="dados-footer">Nosso <a href="" id="footer-redes">Facebook</a></li>
+            <li id="dados-footer">Nosso <a href="https://api.whatsapp.com/send?phone=+5511%20934983223&text=Ol%C3%A1%2C+instituto+aweto" id="footer-redes">Whatssap</a></li>
+            <li id="dados-footer">Nosso <a href="https://www.tiktok.com/@institutoaweto?ug_source=op.auth&ug_term=Linktr.ee&utm_source=awyc6vc625ejxp86&utm_campaign=tt4d_profile_link&_r=1" id="footer-redes">TikTok</a></li>
+            <li id="dados-footer">Nosso <a href="https://www.institutoaweto.com.br/" id="footer-redes">Projeto</a></li>
 
+        </ul>
 
+        <ul class="blocfooter"> Nossas Categorias:
+            <li id="dados-footer"><a href="desenvolvimento.html" id="link-footer">Desenvolvimento Social</a></li>
+            <li id="dados-footer"><a href="religião.html" id="link-footer">Religião</a></li>
+            <li id="dados-footer"><a href="saude.html" id="link-footer">Saúde e Comida</a></li>
+            <li id="dados-footer"><a href="promoção_page.html" id="link-footer">Promoção e Ofertas</a></li>
+            <li id="dados-footer"><a href="todos.html" id="link-footer">Todos Produtos</a></li>
+        </ul>
+
+        <ul class="blocfooter"> Nossas Plataformas:
+            <li id="dados-footer"><a href="https://www.institutoaweto.com.br/" id="link-footer">Instituto Aweto</a></li>
+            <li id="dados-footer"><a href="https://www.institutoaweto.com.br/c%C3%B3pia-projetos-sociais" id="link-footer">Projeto Vida</a></li>
+            <li id="dados-footer"><a href="https://www.institutoaweto.com.br/projetos" id="link-footer">Projeto Sociais</a></li>
+            <li id="dados-footer"><a href="https://www.edpcursos.com.br/" id="link-footer">Nossos Cursos</a></li>
+            <li id="dados-footer"><a href="https://www.institutoaweto.com.br/doa%C3%A7%C3%B5es-e-contato" id="link-footer">Doações</a></li>
+
+        </ul>
+
+        <ul class="blocfootercopy">
+            <li id="dados-footer">Copyright © 2024 Loja Aweto, todos os direitos reservados. Instituto Brasileiro Aweto. Endereço: Roça Itaussu, Av. Dona Benedita Franca da Veiga, 3201 - Vila Lisboa, Mauá - SP, 09330-620</li>
+        </ul>
+
+    </footer>
 
 <script src="../JS/mobile.js"></script>
 <script src="../JS/script.js"></script>

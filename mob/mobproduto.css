@@ -230,7 +230,7 @@
     }
     #autor-produto{
         display: flex;
-        justify-content: left;
+        justify-content: center;
         flex-wrap: wrap;
         font-size: 15px;
         font-weight: bold;
