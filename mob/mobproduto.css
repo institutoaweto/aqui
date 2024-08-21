@@ -92,7 +92,7 @@
         padding: 10px;
         border-radius: 20px;
         color: white;
-        width: 46px;
+        min-width: 60%;
         font-weight: bold;
     }
     .fim-categoriamob{
